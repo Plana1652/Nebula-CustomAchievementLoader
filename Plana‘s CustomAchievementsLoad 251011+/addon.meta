@@ -1,0 +1,11 @@
+{
+	"Id": "CustomAchievementsLoading",
+	"Name": "Plana的自定义成就加载器",
+	"Author": "Plana 客串 小巾",
+	"Description": "",
+	"Version": "2.1",
+	"Build": 0,
+	"Dependency": [
+	],
+	"Hidden": "False"
+}
