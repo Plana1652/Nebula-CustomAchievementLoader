@@ -236,12 +236,8 @@ public static class AchievementLoader
                             {
                                 new DisplayProgressRecord(achievementId, goal, "record." + achievementId, defaultSource);
                             }
-                            else if (!records.IsEmpty<ProgressRecord>()||unlock)
+                            else if (!records.IsEmpty<ProgressRecord>())
                             {
-                                if (records.IsEmpty())
-                                {
-                                    records = new ProgressRecord[] { new ProgressRecord("unlock." + achievementId, 0, true) };
-                                }
                                 var completeAchievement=new CompleteAchievement(records.ToArray(), secret, noHint, achievementId, relatedRoles, types.ToArray(), rarity, attention, specifiedImage);
                                 completeAchievement.HasInfix = hasInfix;
                                 completeAchievement.HasPrefix = hasPrefix;
